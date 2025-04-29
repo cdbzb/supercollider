@@ -300,6 +300,9 @@ Object {
 	?? { arg obj; ^this }
 	!? { arg obj; ^obj.value(this) }
 
+	//piping
+	|> { arg that; ^that.value(this) }
+
 	isNil { ^false }
 	notNil { ^true }
 	isNumber { ^false }
