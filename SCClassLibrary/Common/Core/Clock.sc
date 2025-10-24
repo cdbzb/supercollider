@@ -187,7 +187,7 @@ elapsed time is whatever the system clock says it is right now. elapsed time is 
 	}
 
 	*initClass {
-		default = this.new(queueSize: 2048).permanent_(true);
+		default = this.new(queueSize: 65536).permanent_(true);
 		CmdPeriod.add(this);
 	}
 
